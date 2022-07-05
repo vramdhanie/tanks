@@ -8,9 +8,13 @@ module.exports = {
 		es6: true,
 		browser: true
 	},
-    extends: [
-		'eslint:recommended'
+	plugins: [
+		'@typescript-eslint',
 	],
-	parser: "babel-eslint",
+    extends: [
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+	],
+	parser: "@typescript-eslint/parser",
 	rules: {}
 }
